@@ -11,7 +11,7 @@ import ProducerFactory from "./producerFactory";
   const producer = new ProducerFactory();
   await producer.start();
   await consumer.startConsumer();
-  await producer.sendBatch([{ a: "test" }]);
+  // await producer.sendBatch([{ a: "test" }]);
   // await producer.shutdown();
   // await consumer.shutdown();
 })();
